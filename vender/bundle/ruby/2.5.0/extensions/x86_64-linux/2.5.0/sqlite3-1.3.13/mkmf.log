@@ -1,0 +1,26 @@
+"pkg-config --exists sqlite3"
+package configuration for sqlite3 is not found
+find_header: checking for sqlite3.h... -------------------- no
+
+"gcc -o conftest -I/usr/include/ruby/ruby-2.5.0/x86_64-linux-gnu -I/usr/include/ruby/ruby-2.5.0/ruby/backward -I/usr/include/ruby/ruby-2.5.0 -I.    -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -Wall -fno-strict-aliasing -fPIC conftest.c  -L. -L/usr/lib64 -L. -fstack-protector -rdynamic -Wl,-export-dynamic  -m64   -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -E -I/usr/include/ruby/ruby-2.5.0/x86_64-linux-gnu -I/usr/include/ruby/ruby-2.5.0/ruby/backward -I/usr/include/ruby/ruby-2.5.0 -I.    -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -Wall -fno-strict-aliasing -fPIC  conftest.c -o conftest.i"
+conftest.c:3:21: error: sqlite3.h: No such file or directory
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sqlite3.h>
+/* end */
+
+--------------------
+

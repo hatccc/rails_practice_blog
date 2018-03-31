@@ -1,0 +1,94 @@
+current directory: /usr/lib64/ruby/gems/2.5.0/gems/blog/vender/bundle/ruby/2.5.0/gems/nio4r-2.3.0/ext/nio4r
+/usr/bin/ruby -r ./siteconf20180331-9995-n38zls.rb extconf.rb
+checking for unistd.h... yes
+checking for sys/select.h... yes
+checking for port_event_t in poll.h... no
+checking for sys/epoll.h... yes
+checking for sys/event.h... no
+checking for port_event_t in port.h... no
+checking for sys/resource.h... yes
+creating Makefile
+
+current directory: /usr/lib64/ruby/gems/2.5.0/gems/blog/vender/bundle/ruby/2.5.0/gems/nio4r-2.3.0/ext/nio4r
+make "DESTDIR=" clean
+
+current directory: /usr/lib64/ruby/gems/2.5.0/gems/blog/vender/bundle/ruby/2.5.0/gems/nio4r-2.3.0/ext/nio4r
+make "DESTDIR="
+compiling bytebuffer.c
+compiling monitor.c
+compiling nio4r_ext.c
+In file included from nio4r_ext.c:7:
+../libev/ev.c:488:48: warning: "/*" within comment
+In file included from nio4r_ext.c:7:
+../libev/ev.c:1836: warning: ‘ev_default_loop_ptr’ initialized and declared ‘extern’
+../libev/ev.c: In function ‘evpipe_write’:
+../libev/ev.c:2473: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result
+../libev/ev.c:2485: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result
+../libev/ev.c: In function ‘pipecb’:
+../libev/ev.c:2506: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result
+../libev/ev.c:2520: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result
+In file included from ../libev/ev.c:2710,
+                 from nio4r_ext.c:7:
+../libev/ev_poll.c: In function ‘poll_poll’:
+../libev/ev_poll.c:111: warning: left-hand operand of comma expression has no effect
+In file included from nio4r_ext.c:7:
+../libev/ev.c: In function ‘verify_watcher’:
+../libev/ev.c:3123: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3126: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘verify_heap’:
+../libev/ev.c:3137: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3138: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3139: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘array_verify’:
+../libev/ev.c:3151: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_verify’:
+../libev/ev.c:3169: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3182: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3186: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3187: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘timers_reify’:
+../libev/ev.c:3371: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘periodics_reify’:
+../libev/ev.c:3434: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_backend_poll’:
+../libev/ev.c:3580: warning: no return statement in function returning non-void
+../libev/ev.c: In function ‘ev_run’:
+../libev/ev.c:3594: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3750: warning: passing argument 1 of ‘rb_thread_call_without_gvl’ from incompatible pointer type
+/usr/include/ruby/ruby-2.5.0/ruby/thread.h:28: note: expected ‘void * (*)(void *)’ but argument is of type ‘VALUE (*)(void *)’
+../libev/ev.c:3762: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_io_start’:
+../libev/ev.c:3937: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3938: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3947: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:3949: warning: suggest parentheses around arithmetic in operand of ‘|’
+../libev/ev.c: In function ‘ev_io_stop’:
+../libev/ev.c:3963: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_timer_start’:
+../libev/ev.c:3984: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_timer_stop’:
+../libev/ev.c:4013: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_periodic_start’:
+../libev/ev.c:4077: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_periodic_stop’:
+../libev/ev.c:4110: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_signal_start’:
+../libev/ev.c:4149: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:4152: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_child_start’:
+../libev/ev.c:4271: warning: left-hand operand of comma expression has no effect
+../libev/ev.c: In function ‘ev_embed_start’:
+../libev/ev.c:4856: warning: left-hand operand of comma expression has no effect
+../libev/ev.c:5206:27: warning: "/*" within comment
+../libev/ev.c:5207:27: warning: "/*" within comment
+nio4r_ext.c: In function ‘Init_nio4r_ext’:
+nio4r_ext.c:15: warning: passing argument 1 of ‘ev_set_allocator’ from incompatible pointer type
+../libev/ev.c:1738: note: expected ‘void * (*)(void *, long int)’ but argument is of type ‘void * (*)(void *, size_t)’
+compiling selector.c
+selector.c: In function ‘NIO_Selector_wakeup’:
+selector.c:484: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result
+linking shared-object nio4r_ext.so
+
+current directory: /usr/lib64/ruby/gems/2.5.0/gems/blog/vender/bundle/ruby/2.5.0/gems/nio4r-2.3.0/ext/nio4r
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20180331-9995-biwr91
